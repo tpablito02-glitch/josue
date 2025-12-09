@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona - La Historia y el Presente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Fondo culé con textura */
+        body {
+            background: linear-gradient(135deg, #004D98 0%, #A50044 100%);
+            color: white;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0,0,0,0.3);
+            backdrop-filter: blur(8px);
+            padding: 3rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 2.5rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+            color: #FDB913; /* Amarillo del escudo */
+        }
+
+        /* Párrafos (6 líneas aproximadas cada uno) */
+        .text-paragraph {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: justify;
+            /* Ajuste para asegurar ~6 líneas */
+            min-height: 120px;
+        }
+
+        /* Imagen en movimiento */
+        .moving-image {
+            display: flex;
+            justify-content: center;
+            margin: 2.5rem 0;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 3px solid #FDB913;
+        }
+
+        .moving-image img {
+            width: 80%;
+            height: auto;
+            /* Animación: deslizamiento horizontal + ligero zoom */
+            animation: moveAndZoom 10s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveAndZoom {
+            0% { transform: translateX(-5%) scale(1); }
+            100% { transform: translateX(5%) scale(1.05); }
+        }
+
+        /* Sección de video */
+        .video-section {
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+            border: 3px solid #FDB913;
+        }
+
+        /* Formulario */
+        .form-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #FDB913;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 5px;
+            border: none;
+            background-color: rgba(255,255,255,0.8);
+            color: #004D98;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: #A50044;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #8C0038;
+        }
+
+        /* Responsivo para móviles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .text-paragraph {
+                font-size: 1rem;
+                min-height: 100px;
+            }
+
+            .moving-image img {
+                width: 100%;
+            }
+
+            .video-section iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Título principal -->
+        <h1>FC BARCELONA</h1>
+
+        <!-- Primer párrafo (6 líneas) -->
+        <p class="text-paragraph">
+            El Fútbol Club Barcelona fue fundado el 29 de noviembre de 1899 por un grupo de jugadores liderados por Joan Gamper. Desde sus inicios, el club ha sido un símbolo de identidad catalana, con el lema "Més que un club" que resume su papel en la sociedad más allá del deporte. A lo largo de su historia, ha cosechado innumerables títulos, incluyendo 27 ligas españolas, 31 copas del Rey y 5 títulos de la Champions League. El Camp Nou, su estadio desde 1957, es uno de los más emblemáticos del mundo, con capacidad para más de 99.000 espectadores. El equipo ha contado con jugadores legendarios que han marcado la historia del fútbol, como Johan Cruyff, Diego Maradona y Ronaldinho. Hoy en día, sigue siendo uno de los clubes más populares y competitivos del planeta.
+        </p>
+
+        <!-- Segundo párrafo (6 líneas) -->
+        <p class="text-paragraph">
+            La era de Johan Cruyff como entrenador en los años 90 marcó un punto de inflexión en el estilo de juego del Barça, implantando el famoso "jogo bonito" basado en el control del balón y el paso rápido. Esta filosofía se ha mantenido a lo largo del tiempo y se ha transmitido desde la cantera La Masia, que ha formado a jugadores de la talla de Xavi Hernández, Andrés Iniesta y Lionel Messi. Messi, sin duda, es el jugador más laureado en la historia del club, con 7 Balones de Oro ganados mientras vestía la camiseta culé. Durante su etapa, el equipo consiguió el histórico " sextete " en 2009 y el "quintete" en 2015, cosechando todos los títulos en una temporada. El estilo de juego culé ha sido admirado en todo el mundo y ha servido de referencia para otros clubes y selecciones nacionales. El club también se destaca por su compromiso con causas sociales y humanitarias.
+        </p>
+
+        <!-- Imagen en movimiento (entre segundo y tercer párrafo) -->
+        <div class="moving-image">
+            <img src="BARCA.JPG"
+                 alt="Jugadores del Barça celebrando en el Camp Nou" width="100px">
+        </div>
+
+        <!-- Tercer párrafo (6 líneas) -->
+        <p class="text-paragraph">
+            En la actualidad, el FC Barcelona vive una etapa de reconstrucción después de la salida de Lionel Messi en 2021, buscando recuperar su nivel de máxima competencia. El equipo ha fichado a jugadores prometedores como Pedri, Gavi y Ansu Fati, quienes han demostrado su calidad y se han convertido en referentes para la nueva generación. La dirección técnica, a cargo de entrenadores como Xavi Hernández, ha seguido manteniendo la filosofía de juego tradicional culé. El club ha logrado volver a ganar títulos importantes en los últimos años, incluyendo ligas españolas y copas del Rey, reafirmando su posición entre los mejores del país. El Camp Nou está en proceso de remodelación para convertirse en un estadio de vanguardia que mantenga su esencia emblemática. El apoyo de la hinchada, conocida como "culés", sigue siendo fundamental para el equipo en cada partido.
+        </p>
+
+        <!-- Sección de video -->
+        <div class="video-section">
+            <!-- Video de ejemplo: Mejores goles del Barça 2023-24 (URL pública de YouTube) -->
+            <iframe src="https://www.youtube.com/embed/7Z6X3mY5Y8I" 
+                    title="Mejores goles del FC Barcelona 2023-24" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+
+        <!-- Sección de formulario -->
+        <div class="form-section">
+            <h2>ÚNETE A LA COMUNIDAD CULÉ</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Tu nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Tu correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="favorite-player">Tu jugador favorito del Barça (pasado o presente)</label>
+                    <input type="text" id="favorite-player" name="favorite-player">
+                </div>
+                <div class="form-group">
+                    <label for="message">¿Qué te gusta más del FC Barcelona?</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

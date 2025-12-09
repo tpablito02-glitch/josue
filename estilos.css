@@ -1,0 +1,75 @@
+/* Fondo general */
+body {
+    background-image: url("fondo-gym.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding: 40px;
+}
+
+/* Contenedor principal del formulario */
+.form-box {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+    backdrop-filter: blur(4px);
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #FFD700;
+    text-shadow: 2px 2px 6px black;
+}
+
+/* Estilo para inputs y selects */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.85);
+    font-size: 16px;
+    color: #222;
+}
+
+/* Radio y checkbox */
+.opciones {
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+    width: 48%;
+    background: #E60026;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #A2001B;
+}
+
+/* Centrado */
+.center {
+    text-align: center;
+}
